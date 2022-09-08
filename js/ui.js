@@ -1,7 +1,7 @@
 const recipes = document.querySelector('.recipes');
 
 const renderRecipe = (data, id) => {
-    const html =
+    const html =`
         <div class="card-panel recipe white row" data-id="${id}">
             <img src="/img/dish.png" alt="recipe thumb" />
             <div class="recipe-details">
@@ -11,7 +11,7 @@ const renderRecipe = (data, id) => {
             <div class="recipe-delete">
                 <i class="material-icons" data-id="${id}">delete_outline</i>
             </div>
-        </div>;
+        </div>`;
     recipes.innerHTML += html;
 };
 

@@ -1,7 +1,7 @@
 const recipes = document.querySelector('.recipes');
 
 const renderRecipe = (data, id) => {
-    const html =`
+    const html = `
         <div class="card-panel recipe white row" data-id="${id}">
             <img src="/img/dish.png" alt="recipe thumb" />
             <div class="recipe-details">
@@ -22,3 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const forms = document.querySelectorAll('.side-form');
     M.Sidenav.init(forms, { edge: 'left' });
 });
+
+const removeRecipe = (id) => {
+    const recipe = document.querySelector(`.recipe[data-id=${id}]`);
+    recipe.remove();
+};
+

@@ -41,4 +41,3 @@ recipeContainer.addEventListener('click', evt => {
         db.collection('recipes').doc(id).delete();
     }
 })
-

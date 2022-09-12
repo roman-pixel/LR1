@@ -1,11 +1,11 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#FFE1C4">
     <title>Food Ninja</title>
+
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
@@ -13,14 +13,17 @@
     <link type="text/css" href="/css/styles.css" rel="stylesheet">
     <script type="text/javascript" src="/js/materialize.min.js"></script>
     <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#FFE1C4"> -->
+
+    <link rel="icon" href="/img/icons/icon-96x96.png">
+    <meta name="shortcut icon" content="#FFE1C4">
     <meta name="theme-color" content="#FFE1C4">
 </head>
 
 <body class="grey lighten-4">
-
-    <!-- top nav -->
     <nav class="z-depth-0">
         <div class="nav-wrapper container">
             <a href="/">Food<span>Ninja</span></a>
@@ -30,22 +33,21 @@
         </div>
     </nav>
 
-    <!-- side nav -->
     <ul id="side-menu" class="sidenav side-menu">
         <li><a class="subheader">FOODNINJA</a></li>
-        <li><a href="/" class="waves-effect">Home</a></li>
-        <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+        <li><a href="/" class="waves-effect">Главная страница</a></li>
+        <li><a href="/pages/about.html" class="waves-effect">О нас</a></li>
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="/pages/contact.html" class="waves-effect">
-                <i class="material-icons">mail_outline</i>Contact</a>
+        <li>
+            <a href="/pages/contact.html" class="waves-effect">
+                <i class="material-icons">mail_outline</i>Контакты</a>
         </li>
     </ul>
 
-    <!-- recipes -->
     <div class="recipes container grey-text text-darken-1">
-
+        <h6 class="center">Рецепты ниндзя</h6>
     </div>
 
     <div class="center">
@@ -54,21 +56,27 @@
         </a>
     </div>
 
-    <!-- add recipe side nav -->
     <div id="side-form" class="sidenav side-form">
         <form class="add-recipe container section">
-            <h6>New Recipe</h6>
+            <h6>Новый рецепт</h6>
             <div class="divider"></div>
             <div class="input-field">
-                <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
-                <label for="title">Recipe Title</label>
+                <input placeholder="Например, Суп Ниндзя" id="title" type="text" class="validate">
+                <label for="title">Название рецепта</label>
+                <!-- <span class="some-form__hint">Обязательно для заполнения</span> -->
             </div>
             <div class="input-field">
-                <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
-                <label for="ingredients">Ingredients</label>
+                <input placeholder="Например, тофу, грибы, чеснок" id="ingredients" type="text" class="validate">
+                <label for="ingredients">Ингредиенты</label>
+                <!-- <span class="some-form__hint">Обязательно для заполнения</span> -->
+            </div>
+            <div class="input-field">
+                <input placeholder="Введите цену" id="price" type="text" class="validate">
+                <label for="price">Цена</label>
+                <!-- <span class="some-form__hint">Обязательно для заполнения</span> -->
             </div>
             <div class="input-field center">
-                <button class="btn-small">Add</button>
+                <button class="btn-small">Добавить</button>
             </div>
         </form>
     </div>
@@ -93,5 +101,4 @@
     <script src="/js/db.js"></script>
     <script src="/js/ui.js"></script>
 </body>
-
 </html>

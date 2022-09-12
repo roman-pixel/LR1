@@ -25,12 +25,14 @@ form.addEventListener('submit', evt => {
 
     const recipe = {
         title: form.title.value,
-        ingredients: form.ingredients.value
+        ingredients: form.ingredients.value,
+        price:form.price.value
     };
     db.collection('recipes').add(recipe)
         .catch(err => console.log(err));
     form.title.value = '';
     form.ingredients.value = '';
+    form.price.value = '';
 });
 const recipeContainer = document.querySelector('.recipes');
 recipeContainer.addEventListener('click', evt => {

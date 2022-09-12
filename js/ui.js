@@ -7,6 +7,7 @@ const renderRecipe = (data, id) => {
             <div class="recipe-details">
                 <div class="recipe-title">${data.title}</div>
                 <div class="recipe-ingredients">${data.ingredients}</div>
+                <div class="recipe-price">${data.price}</div>
             </div>
             <div class="recipe-delete">
                 <i class="material-icons" data-id="${id}">delete_outline</i>
@@ -15,12 +16,18 @@ const renderRecipe = (data, id) => {
     recipes.innerHTML += html;
 };
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const menus = document.querySelectorAll('.side-menu');
     M.Sidenav.init(menus, { edge: 'right' });
     const forms = document.querySelectorAll('.side-form');
     M.Sidenav.init(forms, { edge: 'left' });
+});
+
+document.querySelectorAll('input').forEach((input) => {
+  input.addEventListener('input', () => {
+    const message = input.nextSibling.nextElementSibling;
+    message.style.display = input.value ? 'none' : 'block';
+  });
 });
 
 const removeRecipe = (id) => {

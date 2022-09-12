@@ -17,6 +17,8 @@
 </head>
 
 <body class="grey lighten-4">
+
+    <!-- top nav -->
     <nav class="z-depth-0">
         <div class="nav-wrapper container">
             <a href="/">Food<span>Ninja</span></a>
@@ -25,21 +27,23 @@
             </span>
         </div>
     </nav>
+
+    <!-- side nav -->
     <ul id="side-menu" class="sidenav side-menu">
         <li><a class="subheader">FOODNINJA</a></li>
-        <li><a href="/" class="waves-effect">Главная страница</a></li>
-        <li><a href="/pages/about.html" class="waves-effect">О нас</a></li>
+        <li><a href="/" class="waves-effect">Home</a></li>
+        <li><a href="/pages/about.html" class="waves-effect">About</a></li>
         <li>
             <div class="divider"></div>
         </li>
-        <li>
-            <a href="/pages/contact.html" class="waves-effect">
-                <i class="material-icons">mail_outline</i>Контакты</a>
+        <li><a href="/pages/contact.html" class="waves-effect">
+                <i class="material-icons">mail_outline</i>Contact</a>
         </li>
     </ul>
 
+    <!-- recipes -->
     <div class="recipes container grey-text text-darken-1">
-        <h6 class="center">Рецепты ниндзя</h6>
+
     </div>
 
     <div class="center">
@@ -47,20 +51,22 @@
             <i class="material-icons">add</i>
         </a>
     </div>
+
+    <!-- add recipe side nav -->
     <div id="side-form" class="sidenav side-form">
         <form class="add-recipe container section">
-            <h6>Новый рецепт</h6>
+            <h6>New Recipe</h6>
             <div class="divider"></div>
             <div class="input-field">
-                <input placeholder="Например, Суп Ниндзя" id="title" type="text" class="validate">
-                <label for="title">Название рецепта</label>
+                <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
+                <label for="title">Recipe Title</label>
             </div>
             <div class="input-field">
-                <input placeholder="Например, тофу, грибы, чеснок" id="ingredients" type="text" class="validate">
-                <label for="ingredients">Ингредиенты</label>
+                <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
+                <label for="ingredients">Ingredients</label>
             </div>
             <div class="input-field center">
-                <button class="btn-small">Добавить</button>
+                <button class="btn-small">Add</button>
             </div>
         </form>
     </div>
